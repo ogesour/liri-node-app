@@ -1,14 +1,18 @@
 # liri-node-app
 
-1. LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies.
+## LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies.
 
-2. Make a new GitHub repository called  liri-node-app and clone it to your computer.
 
-3. To retrieve the data that will power this app, you'll need to send requests to the Bands in Town, Spotify and OMDB APIs. You'll find these Node packages crucial for your assignment.
-
+1. To search the omdb database the user must enter in command prompt: node liri.js movie-this 'userMovieTitle'   then press enter.
 ![Screenshot1](./omdb.png)
 Format: ![Alt Text](url)
+
+
+1. To search the Band is in town database the user must enter in command prompt: node liri.js concert-this 'userBandName'   then press enter.
 ![Screenshot1](./bands.png)
 Format: ![Alt Text](url)
+
+
+1. To search the Spotify database the user must enter in command prompt: node liri.js spotify-this-song 'userArtistName'   then press enter.
 ![Screenshot1](./spotify.png)
 Format: ![Alt Text](url)
