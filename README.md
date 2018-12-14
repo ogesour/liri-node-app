@@ -8,3 +8,7 @@
 
 ![Screenshot1](./omdb.png)
 Format: ![Alt Text](url)
+![Screenshot1](./bands.png)
+Format: ![Alt Text](url)
+![Screenshot1](./spotify.png)
+Format: ![Alt Text](url)

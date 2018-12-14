@@ -16,11 +16,11 @@ switch(userCommand){
         break;
     }
     case 'concert-this':{
-        consert();
+        concert();
         break;
     }
     case 'spotify-this-song':{
-        spot();
+        songify();
         break;
     }
     default:
@@ -51,7 +51,7 @@ function movie(){
 }
 
 function concert(){
-    request("https://rest.bandsintown.com/artists/" + userChoice + "/events?app_id=codingbootcamp", function(err,response, body){
+    request("https://rest.bandsintown.com/artists/" + userChoice + "/events?app_id= c71104e0c553f4e62c94fe5483a5f38c", function(err,response, body){
         if(!err && response.statusCode === 200){
             // console.log(response.statusCode);
             console.log(JSON.parse(body));
@@ -72,12 +72,12 @@ function concert(){
     });
 }
 
-function spot(){
+function songify(){
     if(!userChoice){
         userChoice = 'Let it Snow';
     }
     
-    spotify.search({ type: 'track', query: userChoise, limit: 1 }, function(err, data) {
+    spotify.search({ type: 'track', query: userChoice, limit: 1 }, function(err, data) {
         if (err) {
           return console.log('Error occurred: ' + err);
         }
